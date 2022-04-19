@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: rgb(168, 250, 236);
+    }
+    
+    .left,
+    .right {
+        width: 50%;
+    }
+    
+    .part1 {
+        background-color: rgb(13, 172, 145);
+        height: 6rem;
+        width: 100%;
+        margin: 0px
+    }
+    
+    .part2 {
+        width: 100%;
+        margin: 0px;
+        height: 45rem;
+        background-color: rgb(168, 250, 236);
+    }
+    
+    .part2 .box1 {
+        margin-top: 42px;
+    }
+    
+    .image {
+        background-color: red;
+        border-radius: 50%;
+        height: 4rem;
+        width: 6%;
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    
+    .box:hover {
+        border-left: 3px solid rgb(13, 172, 145);
+        cursor: pointer;
+    }
+    
+    .box {
+        background-color: aliceblue;
+        height: 14%;
+        margin-left: 7em;
+        margin-right: 7em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: 3px 7px 20px 0px #6e6b6b63;
+        display: flex;
+    }
+    
+    .bn {
+        float: right;
+        margin: auto;
+        padding: 38px;
+    }
+    
+    .upper button {
+        color: white;
+        padding: 4px;
+        border: none;
+    }
+    
+    .upper {
+        margin-left: 102px;
+        display: inline-flex;
+        padding: 10px 0px;
+    }
+    
+    .mid,
+    .last {
+        margin-left: 102px;
+    }
+    
+    .right button {
+        border: transparent;
+        margin: 2px;
+        padding: 3px;
+        border-radius: 2px;
+    }
+    
+    @media screen and (max-width:700px) {
+        .image {
+            margin-top: -21px;
+            height: 2rem;
+            width: 7%;
+        }
+        .box {
+            display: inline-table;
+            padding: 5px;
+        }
+        .bn {
+            padding-right: 11px;
+            padding: 0px;
+            margin-right: 40px;
+            float: none;
+        }
+        .upper {
+            margin-left: 0px;
+            width: max-content;
+        }
+        .mid {
+            margin-left: 0px;
+            width: max-content;
+        }
+        .last {
+            margin-left: 0px;
+            width: max-content;
+        }
+        .right {
+            padding: 4px;
+        }
+        .right,
+        .left {
+            width: 100%;
+        }
+        .left {
+            border-bottom: 2px solid darkgrey;
+            margin-right: 40px;
+        }
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="part1"></div>
+        <div class="part2">
+            <div class="box1 box">
+                <div class="left">
+                    <div class="image "></div>
+                    <div class="upper ">
+                        <p>Photoshop</p> <button style="background-color: green; border-radius: 8%; font-size: x-small; margin: 2px;">NEW</button><button style="background-color: black; border-radius: 8%; color: white; font-size: x-small; margin:
+                    2px; ">FEATURE</button> </div>
+
+                    <div class="mid ">
+                        <p><strong>Senior Frontend Developer</strong></p>
+                    </div>
+                    <div class="last " style="color: darkgrey; margin-top: 3px; ">
+                        <table>
+                            <tr>
+                                <td>1d ago</td>
+                                <td>.</td>
+                                <td>Full time</td>
+                                <td>.</td>
+                                <td>Usa only</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="bn"><button class="b1" style="background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Angular</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Web</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">App</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Flutter</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">VR</button></div>
+                </div>
+            </div>
+            <div class="box2 box">
+                <div class="left">
+                    <div class="image " style="background-color: blue; "></div>
+                    <div class="upper ">
+                        <p>Photoshop</p> <button style="background-color: green; border-radius: 8%; font-size: x-small; margin: 2px; ">NEW</button><button style="background-color: black; border-radius: 8%; color: white; font-size: x-small; margin:
+                    2px; ">FEATURE</button> </div>
+
+                    <div class="mid">
+                        <p><strong>Senior Frontend Developer</strong></p>
+                    </div>
+                    <div class="last" style="color: darkgrey; margin-top: 3px; ">
+                        <table>
+                            <tr>
+                                <td>1d ago</td>
+                                <td>.</td>
+                                <td>Full time</td>
+                                <td>.</td>
+                                <td>Usa only</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="bn"><button class="b1" style="background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Angular</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Web</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">App</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Flutter</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">VR</button></div>
+                </div>
+            </div>
+            <div class="box3 box">
+                <div class="left">
+                    <div class="image" style="background-color: black; "></div>
+                    <div class="upper">
+                        <p>Photoshop</p> <button style="background-color: green; border-radius: 8%; font-size: x-small; margin: 2px; ">NEW</button><button style="background-color: black; border-radius: 8%; color: white; font-size: x-small; margin:
+                    2px; ">FEATURE</button> </div>
+
+                    <div class="mid">
+                        <p><strong>Senior Frontend Developer</strong></p>
+                    </div>
+                    <div class="last" style="color: darkgrey; margin-top: 3px; ">
+                        <table>
+                            <tr>
+                                <td>1d ago</td>
+                                <td>.</td>
+                                <td>Full time</td>
+                                <td>.</td>
+                                <td>Usa only</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="bn"><button class="b1" style="background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Angular</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Web</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">App</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Flutter</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">VR</button></div>
+                </div>
+            </div>
+            <div class="box4 box">
+                <div class="left">
+                    <div class="image " style="background-color: purple; "></div>
+                    <div class="upper ">
+                        <p>Photoshop</p> <button style="background-color: green; border-radius: 8%; font-size: x-small; margin: 2px; ">NEW</button><button style="background-color: black; border-radius: 8%; color: white; font-size: x-small; margin:
+                    2px; ">FEATURE</button> </div>
+
+                    <div class="mid">
+                        <p><strong>Senior Frontend Developer</strong></p>
+                    </div>
+                    <div class="last" style="color: darkgrey; margin-top: 3px; ">
+                        <table>
+                            <tr>
+                                <td>1d ago</td>
+                                <td>.</td>
+                                <td>Full time</td>
+                                <td>.</td>
+                                <td>Usa only</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="bn"><button class="b1" style="background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Angular</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Web</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">App</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Flutter</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">VR</button></div>
+                </div>
+            </div>
+            <div class="box5 box">
+                <div class="left">
+                    <div class="image"></div>
+                    <div class="upper">
+                        <p>Photoshop</p> <button style="background-color: green; border-radius: 8%; font-size: x-small; margin: 2px; ">NEW</button><button style="background-color: black; border-radius: 8%; color: white; font-size: x-small; margin:
+                    2px; ">FEATURE</button> </div>
+
+                    <div class="mid">
+                        <p><strong>Senior Frontend Developer</strong></p>
+                    </div>
+                    <div class="last" style="color: darkgrey; margin-top: 3px; ">
+                        <table>
+                            <tr>
+                                <td>1d ago</td>
+                                <td>.</td>
+                                <td>Full time</td>
+                                <td>.</td>
+                                <td>Usa only</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="right ">
+                    <div class="bn"><button class="b1" style="background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Angular</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Web</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">App</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Flutter</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">VR</button></div>
+                </div>
+            </div>
+            <div class="box6 box">
+                <div class="left">
+                    <div class="image" style="background-color: burlywood; "></div>
+                    <div class="upper">
+                        <p>Photoshop</p> <button style="background-color: green; border-radius: 8%; font-size: x-small; margin: 2px; ">NEW</button><button style="background-color: black; border-radius: 8%; color: white; font-size: x-small; margin:
+                    2px; ">FEATURE</button> </div>
+
+                    <div class="mid">
+                        <p><strong>Senior Frontend Developer</strong></p>
+                    </div>
+                    <div class="last" style="color: darkgrey; margin-top: 3px; ">
+                        <table>
+                            <tr>
+                                <td>1d ago</td>
+                                <td>.</td>
+                                <td>Full time</td>
+                                <td>.</td>
+                                <td>Usa only</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="bn"><button class="b1" style="background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Angular</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Web</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">App</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Flutter</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">VR</button></div>
+                </div>
+            </div>
+            <div class="box7 box">
+                <div class="left">
+                    <div class="image" style="background-color: pink; "></div>
+                    <div class="upper">
+                        <p>Photoshop</p> <button style="background-color: green; border-radius: 8%; font-size: x-small; margin: 2px; ">NEW</button><button style="background-color: black; border-radius: 8%; color: white; font-size: x-small; margin:
+                    2px; ">FEATURE</button> </div>
+
+                    <div class="mid">
+                        <p><strong>Senior Frontend Developer</strong></p>
+                    </div>
+                    <div class="last" style="color: darkgrey; margin-top: 3px; ">
+                        <table>
+                            <tr>
+                                <td>1d ago</td>
+                                <td>.</td>
+                                <td>Full time</td>
+                                <td>.</td>
+                                <td>Usa only</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="right ">
+                    <div class="bn"><button class="b1" style="background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Angular</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Web</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">App</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Flutter</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">VR</button></div>
+                </div>
+            </div>
+            <div class="box8 box">
+                <div class="left">
+                    <div class="image" style="background-color: yellow; "></div>
+                    <div class="upper">
+                        <p>Photoshop</p> <button style="background-color: green; border-radius: 8%; font-size: x-small; margin: 2px; ">NEW</button><button style="background-color: black; border-radius: 8%; color: white; font-size: x-small; margin:
+                    2px; ">FEATURE</button> </div>
+
+                    <div class="mid">
+                        <p><strong>Senior Frontend Developer</strong></p>
+                    </div>
+                    <div class="last" style="color: darkgrey; margin-top: 3px; ">
+                        <table>
+                            <tr>
+                                <td>1d ago</td>
+                                <td>.</td>
+                                <td>Full time</td>
+                                <td>.</td>
+                                <td>Usa only</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="bn"><button class="b1" style="background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Angular</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Web</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">App</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Flutter</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">VR</button></div>
+                </div>
+            </div>
+            <div class="box9 box">
+                <div class="left">
+                    <div class="image " style="background-color: aqua; "></div>
+                    <div class="upper ">
+                        <p>Photoshop</p> <button style="background-color: green; border-radius: 8%; font-size: x-small; margin: 2px; ">NEW</button><button style="background-color: black; border-radius: 8%; color: white; font-size: x-small; margin:
+                    2px; ">FEATURE</button> </div>
+
+                    <div class="mid">
+                        <p><strong>Senior Frontend Developer</strong></p>
+                    </div>
+                    <div class="last" style="color: darkgrey; margin-top: 3px; ">
+                        <table>
+                            <tr>
+                                <td>1d ago</td>
+                                <td>.</td>
+                                <td>Full time</td>
+                                <td>.</td>
+                                <td>Usa only</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="bn"><button class="b1" style="background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Angular</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Web</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">App</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">Flutter</button><button style=" background-color: rgb(168, 250, 236);
+                        color: rgb(13, 172, 145);">VR</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
